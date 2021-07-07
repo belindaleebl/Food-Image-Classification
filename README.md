@@ -10,14 +10,14 @@ They say we eat with our eyes and our noses first, before we actually taste food
 
 The data for this project is sourced from Kaggle, the Food Images(Food-101) dataset. There are multiple groups of images, already split into training and testing sets in hdf5 format, based on the image sizes. I chose to use the 384 x 384 x 3 for the training set, and the 128 x 128 x 3 for the testing set. Meta data including the classes and labels were used as well. 
 
-![training images](./images/training.png)
+![training images](https://github.com/belindaleebl/Food-Image-Classification/blob/main/Images/training.png?raw=true)
 
 
 ## Exploratory Data Analysis 
 
 Since the data are images, I first took a quick peak at the images, and then built a dataframe with the correct labels and number of each image class. Upon looking closer, it is clear that there is an imbalance of data throughout the classes. 
 
-![training images imbalance](./images/classes_training.png)
+![training images imbalance](https://github.com/belindaleebl/Food-Image-Classification/blob/main/Images/classes_training.png?raw=true)
 
 
 ## Data Preprocessing
@@ -38,8 +38,8 @@ Next, I tried using transfer learning with VGG16, as a model with thousands of p
 
 For a final model, I applied image augmentations to see if this would help increase validation accuracy while keeping validation loss low. I used ImageDataGenerator to augment the images while the model is training. The validation accuracy score here did increase to 0.11. This is good news, as it tells us that with additional training images, or augmented images, we are seeing better results. 
 
-![model 3 accuracy](./images/model3accuracy.png)
-![model 3 loss](./images/model3loss.png)
+![model 3 accuracy](https://github.com/belindaleebl/Food-Image-Classification/blob/main/Images/model3accuracy.png?raw=true)
+![model 3 loss](https://github.com/belindaleebl/Food-Image-Classification/blob/main/Images/model3loss.png?raw=true)
 
 
 
